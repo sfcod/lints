@@ -8,7 +8,9 @@
 
 ```
     "scripts": {
-        "flow": "./node_modules/.bin/flow",
-        "eslint": "./node_modules/.bin/eslint --fix --quiet '+(assets)/**/**.js?(x)' || exit 0"
+        "flow": "flow",
+        "eslint": "eslint --ignore-path .eslintignore --fix --quiet '+(assets)/**/**.js?(x)' || exit 0",
+        "prettier": "prettier --loglevel=silent --write '+(assets)/**/**.js?(x)'",
+        "lint": "npm run eslint && npm run prettier && npm run flow"
     }
 ```
