@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "babel",
+        "react",
+        "react-redux",
+        "flowtype",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "max-len": ["error", 120],
+        "no-console": ["error", {
+            "allow": ["warn", "error"]
+        }]
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-redux/recommended",
+        "plugin:prettier/recommended",
+        "plugin:flowtype/recommended",
+        "prettier",
+        "prettier/babel",
+        "prettier/react",
+        "prettier/flowtype"
+    ]
+}
