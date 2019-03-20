@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-config-standard",
+        "tslint-react",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "interface-name": [true, "never-prefix"],
+        "object-literal-sort-keys": false,
+        "no-empty-interface": false,
+        "indent": [true, "spaces", 4],
+        "max-line-length": [true, 120],
+        "no-console": [true, "log"]
+    },
+    "rulesDirectory": [],
+    "exclude": [
+        "node_modules"
+    ]
+}
