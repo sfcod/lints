@@ -11,6 +11,7 @@ $config = PhpCsFixer\Config::create()
         'phpdoc_summary' => false,
         'phpdoc_no_empty_return' => false,
         'phpdoc_inline_tag' => false,
+        'no_superfluous_phpdoc_tags' => false,
         'pre_increment' => false,
         'heredoc_to_nowdoc' => false,
         'cast_spaces' => false,
